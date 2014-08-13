@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio API</title>
+</head>
+<body>
+  <audio controls>
+  	<source src="http://ia600303.us.archive.org/18/items/TakeMeOutToTheBallGameByEdMeeker/edmeeker-TakeMeOuttotheBallGame.mp3" type="audio/mpeg">
+  	<source src="http://ia600303.us.archive.org/18/items/TakeMeOutToTheBallGameByEdMeeker/edmeeker-TakeMeOuttotheBallGame.ogg" type="audio/ogg"></source>
+  	Browser does not support the <code>audio</code> element. Perhaps you shouldn't use IE?
+  </audio>
+
+  <script>
+  	var audio;
+
+  	function playPause () {
+  	  audio.paused ? audio.play() : audio.pause();
+  	}
+
+  	function init(){
+  		audio = document.getElementByTagName('audio')[0];
+  		audio.play();
+  	}
+  </script>
+</body>
+</html>
