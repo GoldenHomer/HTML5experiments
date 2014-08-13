@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video API</title>
+</head>
+<body>
+  <video controls>
+  	<source src="sugarsugar.mp4" type="video/mp4">
+  	<source src="sugarsugar.ogg" type="video/ogg"></source>
+  	Browser does not support the <code>video</code> element. Perhaps you shouldn't use IE?
+  </video>
+
+  <script>
+  	var video;
+      window.addEventListener('load', init, false);
+  	function playPause () {
+  	  video.paused ? video.play() : video.pause();
+  	}
+
+  	function init(){
+  		video = document.getElementsByTagName('video')[0];
+  		video.play();
+  	}
+  </script>
+</body>
+</html>
