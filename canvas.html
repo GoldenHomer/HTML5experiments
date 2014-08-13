@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas Drawing</title>
+</head>
+<body>
+	<canvas id="drawId" width="600" height="600"></canvas>
+	<script>
+	window.addEventListener('load', draw);
+	function draw () {
+		var canvas = document.getElementById('drawId');
+		var con = canvas.getContext('2d');
+		con.fillStyle = "blue";
+		con.fillRect(100, 100, 30, 30);
+		con.fillRect(150, 150, 30, 30);
+	}
+	</script>
+</body>
+</html>
